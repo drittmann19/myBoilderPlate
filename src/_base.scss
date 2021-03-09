@@ -1,5 +1,12 @@
-$bg: yellow;
-
 body {
-  background: $bg;
+  background: $background-color;
+}
+
+h1{
+  font-size: 3em;
+  font-family: 'Roboto Mono', monospace;
+}
+
+a{
+  color: $link-color;
 }

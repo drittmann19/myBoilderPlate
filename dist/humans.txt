@@ -3,13 +3,8 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+    Damean Rittmann -- Custom Boilerplate -- Creative Web Development
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
-    Apache Server Configs, Modernizr, Normalize.css, main.css, Parcel
+    HTML5, SCSS, Webpack, Javascript
