@@ -1,29 +1,69 @@
-.parallax_back1 {
-  height: 2000px;
-  background: url("../dist/img/cave2.jpg");
+.parallax_img1 {
+  height: 1000px;
+  background: url("../dist/img/raceHeader.jpg");
   // background-image: url('http://placehold.it/500x500/336699');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% auto;
+    position: relative;
 }
 
-.parallax_back2 {
-  height: 2000px;
-  background-image: url("../dist/img/cave1.jpg");
+.parallax_img2 {
+  height: 1000px;
+  background-image: url("../dist/img/parallax_start.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% auto;
+    position: relative;
 }
 
-.parallax_back3{
-  height: 2000px;
-  background-image: url("../dist/img/cave3.jpg");
+.parallax_img3{
+  height: 1000px;
+  background-image: url("../dist/img/parallax_engine.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% auto;
+    position: relative;
+}
+
+.parallax_img4{
+  height: 1000px;
+  background-image: url("../dist/img/parallax_red.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+    position: relative;
+}
+.parallax_img5{
+  height: 1000px;
+  background-image: url("../dist/img/parallax_yellow.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+    position: relative;
+}
+.parallax_img6{
+  height: 1000px;
+  background-image: url("../dist/img/parallax_green.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+    position: relative;
+}
+.parallax_img7{
+  height: 1500px;
+  background-image: url("../dist/img/background_start.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {
@@ -85,48 +125,42 @@ $primary: #1586D1;
 
 @include parallax-init;
 
-.parallax-torch{
-  @include parallax(-2);
-  background: url("../dist/img/torchIcon.png");
-  top:200px;
-  right:50px;
-  max-width: 50px;
+
+.textContainers{
+  text-align: center;
+}
+
+.parallax-container {
+  section:nth-child(1) {
+    @include parallax(.1);
+    top: 425px;
+    left: 15%;
+    width: 100px;
+  }
+  //nth-child lets you style individual elements within the container.
+  section:nth-child(2) {
+    @include parallax(.4);
+    top: 300px;
+    left: 35%;
+  }
+  section:nth-child(3) {
+    @include parallax(.2);
+    top: 385px;
+    left: 55%;
+  }
+  section:nth-child(4) {
+    @include parallax(.3);
+    top: 340px;
+    left: 75%;
+  }
+  background-color: $background-color;
+  width: 100%;
   margin: auto;
-  position: absolute;
+  > * {
+    position: absolute;
+  }
 }
 
-.parallax-container1{
-  @include parallax(.1);
-  top: 200px;
-  left: 200px;
-  max-width: 50%;
-  padding: 20px;
-  margin:auto;
-  position: absolute;
-  background-color: orange;
-  color: black;
-}
-
-// .parallax-container {
-//   :nth-child(1) {
-//     @include parallax(-.4);
-//     top: 200px;
-//     left: 200px;
-//     background-color: orange;
-//     color: black;
-//   }
-//   padding: 20px;
-//   max-width: 50%;
-//   margin: auto;
-//   position: absolute;
-// }
-
-body {
-  font-family: Roboto, sans-serif;
-  font-weight: 100;
-  background: #EEF1F3;
-  line-height: 1;
-}
 
 h1, h2 {
   font-weight: 100;

@@ -1,11 +1,18 @@
 body {
-  background: $background-color;
-  font-family: 'Roboto', sans-serif;
+  background: $primary-color;
+  // font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  color: $background-color;
 }
 
 h1{
   font-size: 3em;
   font-family: 'Roboto Mono', monospace;
+}
+
+h3{
+  font-size: 3em;
+  font-family: 'Oswald', sans-serif;
 }
 
 a{
